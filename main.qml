@@ -1,12 +1,12 @@
 import QtQuick 2.3
-import QtQuick.controls 2.0
+import QtQuick.Controls 2.0
 
-Window {
-    color: red
+ApplicationWindow {
+    color: 'red'
     visible:true
-    visibility: "maximized"
+    visibility: "Maximized"
     title: qsTr("--Mi primer app en Qml--")
-    anchors.centerIn: parent
+    //anchors.centerIn: parent
 
     Rectangle {
         id:boton
@@ -21,7 +21,7 @@ Window {
         }
 
         MouseArea{
-            acceptedButtons: Qt.AllButtons
+            anchors.fill: parent
             onClicked:{
                 console.log("No pasara nada, repito esto es un testeo")
                 if( mouse.button === Qt.RightButton)
